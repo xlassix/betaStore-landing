@@ -6,7 +6,6 @@ import {
   Slide,
   ButtonBack,
   ButtonNext,
-  Dot,
 } from "pure-react-carousel";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import "./App.css";
