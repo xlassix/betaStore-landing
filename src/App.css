@@ -40,7 +40,7 @@
 }
 
 .carousel button[disabled] {
-  display: none;
+  color: transparent;
 }
 
 .animate {
@@ -49,6 +49,15 @@
 	-webkit-animation: bounce 4s infinite;
 	-moz-animation: bounce 4s infinite;
 	-o-animation: bounce 4s infinite;
+  transition: all .4s ease-in-out;
+}
+
+.animate:hover {
+  transform: scale(1.75);
+  animation: none;
+  -webkit-animation:none;
+	-moz-animation:none;
+	-o-animation:none;
 }
  
 @-webkit-keyframes bounce {

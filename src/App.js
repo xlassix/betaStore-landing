@@ -16,16 +16,19 @@ const countryData = [
     image: "/img/nigeria.png",
     imageAlt: "nigeria.png",
     countryName: "NIGERIA",
+    to: "https://google.com",
   },
   {
     image: "/img/cote.png",
     imageAlt: "cote.png",
     countryName: "CÔTE D'IVOIRE",
+    to: "https://google.com",
   },
   {
     image: "/img/sn.png",
     imageAlt: "sen.png",
     countryName: "SENEGAL",
+    to: "https://google.com",
   },
 ];
 
@@ -62,12 +65,14 @@ function App() {
             </ButtonBack>
             <Slider>
               {countryData.map((data, index) => (
-                <Slide index={index}>
-                  <Center>
-                    <img src={data.image} alt={data.imageAlt} />
-                  </Center>
-                  <Text>{data.countryName}</Text>
-                </Slide>
+                <a href={data.to}>
+                  <Slide index={index}>
+                    <Center>
+                      <img src={data.image} alt={data.imageAlt} />
+                    </Center>
+                    <Text>{data.countryName}</Text>
+                  </Slide>
+                </a>
               ))}
             </Slider>
             <ButtonNext className="animate">
