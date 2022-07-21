@@ -12,38 +12,60 @@
 }
 
 .carousel__slide, .carousel__inner-slide, .carousel__slide--hidden,.carousel>div{
-  max-height:15rem;
   transition: 200ms;
 }
 
 .carousel{
   display: flex;
+  flex-direction: column;
 }
 .carousel>div{
+  display: flex;
+  min-height: 16rem;
+}
+.carousel>div>div{
   flex-basis: 90%;
-  max-height: 13rem;
 }
 .carousel img{
   height: 10rem;
 }
 .logo{
-  max-width: 15rem;
+  max-width: 18rem;
 }
-.carousel__slide p{
+.carousel__slide h5{
   font-weight: 700;
   font-size: large ;
   line-height: 1.2;
   padding-top:0.5rem;
 }
-.carousel__slide:hover{
+.carousel__slide h5 {
+  font-weight: 700;
+  font-size: large ;
+  line-height: 1.2;
+  padding-top:0.5rem;
+}
+
+.carousel__slide p,.carousel__slide p>a {
+  font-size: 0.8rem ;
+  display: flex;
+  align-items: center;
+}
+
+.carousel__slide p>a :hover,.carousel__slide p>a :focus{
   color: orange
 }
 
+.carousel__slide a svg{
+  width: 1.1rem;
+  height: 1.1rem;
+  margin-left: 0.25rem;
+}
 .carousel button[disabled] {
   color: transparent;
 }
 
 .animate {
+  margin-bottom: 5rem;
 	position: relative;
 	animation: bounce 4s infinite;
 	-webkit-animation: bounce 4s infinite;
@@ -59,6 +81,12 @@
 	-moz-animation:none;
 	-o-animation:none;
 }
+
+.green{
+color: var(--chakra-colors-green-500);
+}
+
+
  
 @-webkit-keyframes bounce {
 	0%, 20%, 50%, 80%, 100% {-webkit-transform: scale(1);}	
