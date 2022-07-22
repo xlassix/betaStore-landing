@@ -115,7 +115,7 @@ function App() {
                       </a>
                       <Text textAlign="left">{data.newClient}{"  "}<a href={data.clientClick}>{data.clickHere}</a></Text>
                       <Text textAlign="left">{data.newWholeSaler}{"  "}<a href={data.warehouseClick}>{data.clickHere}</a></Text>
-                      <Text textAlign="left">{data.enquireOrComplain}: <a href={`tel(${data.contact})`}><BsFillTelephoneFill/> {data.contact}</a></Text>
+                      <Text textAlign="left">{data.enquireOrComplain}: <a href={`tel:${data.contact}`}><BsFillTelephoneFill/> {data.contact}</a></Text>
                       <Text textAlign="left">{data.chatUs}:<a className="green" href={data.whatsapp}><BsWhatsapp/></a> </Text>
                     </Slide>
                   </Box>
